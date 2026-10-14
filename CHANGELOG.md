@@ -1,0 +1,9 @@
+# История версий wmarka clean
+
+## 1.0.1 — 14 октября 2026
+
+**Сообщения ядра — только когда они есть.** Макет ядра `layouts/joomla/system/message.php` подключал `core.min.js`, `messages.min.js`, `joomla-alert.min.css` и строки для JavaScript на каждой странице, даже без сообщений. Переопределение `html/layouts/joomla/system/message.php` подключает их, только когда сообщение есть или на странице работает проверка форм; иначе выводит пустой контейнер `#system-message-container`. На обычной странице остаются четыре файла шаблона: `uikit.min.css`, `clean.css`, `uikit.min.js`, `uikit-icons.min.js`.
+
+## 1.0.0 — 14 октября 2026
+
+Первый выпуск: чистая сборка wmarka без настроек.

@@ -42,7 +42,7 @@
 
 ## Установка
 
-1. Скачайте `tpl_wmarka_clean-1.0.0.zip` со страницы [выпусков](https://github.com/bsakhanov/wmarka-clean/releases).
+1. Скачайте `tpl_wmarka_clean-1.0.1.zip` со страницы [выпусков](https://github.com/bsakhanov/wmarka-clean/releases).
 2. Админка Joomla → **Система → Установка расширений → Загрузить файл пакета** → выберите архив.
 3. **Система → Стили шаблонов сайта** → у стиля «wmarka_clean - По умолчанию» нажмите звёздочку: он станет стилем по умолчанию.
 4. Поставьте JUImage, если её ещё нет на сайте: архив `lib_juimage` есть в выпусках [JUImage](https://github.com/Joomla-Ukraine/JUImage) и внутри полного пакета [wmarka](https://github.com/bsakhanov/wmarka/releases). Шаблон найдёт библиотеку сам.
