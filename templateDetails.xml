@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="template" client="site" method="upgrade">
+    <name>wmarka_clean</name>
+    <version>1.0.0</version>
+    <creationDate>2026-10-14</creationDate>
+    <author>Webmarka · Beibit Sakhanov</author>
+    <authorUrl>https://webmarka.kz</authorUrl>
+    <copyright>(C) 2026 Webmarka</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <description>TPL_WMARKA_CLEAN_XML_DESCRIPTION</description>
+    <inheritable>1</inheritable>
+    <files>
+        <filename>index.php</filename>
+        <filename>component.php</filename>
+        <filename>error.php</filename>
+        <filename>offline.php</filename>
+        <filename>joomla.asset.json</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>LICENSE.txt</filename>
+        <filename>README.md</filename>
+        <filename>README.kk.md</filename>
+        <filename>README.en.md</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <folder>html</folder>
+        <folder>php</folder>
+    </files>
+    <media destination="templates/site/wmarka_clean" folder="media">
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>images</folder>
+    </media>
+    <positions>
+        <position>toolbar-left</position>
+        <position>toolbar-right</position>
+        <position>logo</position>
+        <position>navbar-center</position>
+        <position>navbar-right</position>
+        <position>iconnav</position>
+        <position>breadcrumb</position>
+        <position>adver-top</position>
+        <position>slider</position>
+        <position>block-a</position>
+        <position>block-b</position>
+        <position>main-top</position>
+        <position>main-bottom</position>
+        <position>sidebar-a</position>
+        <position>sidebar-b</position>
+        <position>block-c</position>
+        <position>block-d</position>
+        <position>block-e</position>
+        <position>block-f</position>
+        <position>block-g</position>
+        <position>block-h</position>
+        <position>block-i</position>
+        <position>block-k</position>
+        <position>footer-left</position>
+        <position>footer-center</position>
+        <position>footer-right</position>
+        <position>footer</position>
+        <position>offcanvas-menu</position>
+        <position>offcanvas</position>
+        <position>debug</position>
+    </positions>
+    <languages folder="language">
+        <language tag="ru-RU">ru-RU/tpl_wmarka_clean.ini</language>
+        <language tag="ru-RU">ru-RU/tpl_wmarka_clean.sys.ini</language>
+        <language tag="en-GB">en-GB/tpl_wmarka_clean.ini</language>
+        <language tag="en-GB">en-GB/tpl_wmarka_clean.sys.ini</language>
+    </languages>
+</extension>

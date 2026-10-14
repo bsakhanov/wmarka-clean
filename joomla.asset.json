@@ -1,0 +1,13 @@
+{
+    "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+    "name": "wmarka_clean",
+    "version": "1.0.0",
+    "description": "wmarka clean — UIkit 3 и стили шаблона",
+    "license": "GPL-2.0-or-later",
+    "assets": [
+        {"name": "template.wmarka_clean.uikit", "type": "style", "uri": "uikit.min.css"},
+        {"name": "template.wmarka_clean", "type": "style", "uri": "clean.css", "dependencies": ["template.wmarka_clean.uikit"]},
+        {"name": "template.wmarka_clean.uikit", "type": "script", "uri": "uikit.min.js", "attributes": {"defer": true}},
+        {"name": "template.wmarka_clean.icons", "type": "script", "uri": "uikit-icons.min.js", "dependencies": ["template.wmarka_clean.uikit"], "attributes": {"defer": true}}
+    ]
+}

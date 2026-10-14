@@ -1,0 +1,40 @@
+/* wmarka clean — всё, чего нет в UIkit. Без настроек: правьте этот файл или дочерний шаблон. */
+
+/* Без капса: тема UIkit пишет пункты навбара, кнопки, подписи и шапки таблиц прописными — по-русски это читается как крик */
+.uk-description-list>dt,.uk-table th,.uk-button,.uk-card-badge,.uk-label,.uk-nav-header,.uk-navbar-nav>li>a,.uk-subnav>*>:first-child,.uk-tab>*>a{text-transform:none}
+.uk-navbar-nav>li>a{font-size:.95rem}
+
+/* Колонка контента и текст сжимаются до ширины экрана */
+.wm-main,.wm-text,.wm-block-grid>*{min-width:0}
+.wm-text img{max-width:100%;height:auto}
+.wm-text iframe{max-width:100%}
+iframe[src*="youtube.com/embed"],iframe[src*="youtube-nocookie.com/embed"],iframe[src*="player.vimeo.com"]{width:100%;height:auto;aspect-ratio:16/9}
+
+/* Таблица текста на телефоне — столбиком, у значения подпись столбца */
+@media (max-width:959px){.uk-table-responsive td[data-label]::before{content:attr(data-label);display:block;margin-bottom:2px;font-size:.75rem;color:#999}}
+
+/* Цитата: крупный глиф кавычки подложкой и бледный фон */
+.wm-text blockquote{position:relative;margin:2em 0;padding:1.6em 1.6em 1.4em 4.5em;background:#f3f6fa;border-radius:6px;font-style:normal;font-size:1.1rem;color:#222;overflow:hidden}
+.wm-text blockquote::before{content:"\201C";position:absolute;left:.12em;top:-.08em;font:700 8rem/1 Georgia,serif;color:rgba(30,135,240,.16)}
+.wm-text blockquote p{margin:0}
+.wm-text blockquote footer{margin-top:.8em;font-size:.875rem;color:#666}
+
+/* Меню навбара в мобильной панели — столбиком, подпункты раскрыты */
+.uk-offcanvas-bar .uk-navbar-nav{display:block}
+.uk-offcanvas-bar .uk-navbar-nav>li>a{min-height:auto;padding:8px 0;justify-content:flex-start}
+.uk-offcanvas-bar .uk-navbar-dropdown{display:block;position:static;width:auto;padding:0 0 8px 15px;background:none;box-shadow:none}
+.uk-offcanvas-bar .uk-navbar-parent-icon{display:none}
+
+/* Разметка ядра без переопределений (формы пользователей, контакта, сообщения) — в духе UIkit */
+.control-group{margin-bottom:15px}
+.control-label label{display:block;margin-bottom:5px;font-size:.875rem;color:#333}
+.form-control,.form-select,.inputbox,input[type=text].form-control,input[type=email].form-control,input[type=password].form-control,textarea.form-control{box-sizing:border-box;max-width:100%;width:100%;height:40px;padding:0 10px;background:#fff;color:#666;border:1px solid #e5e5e5;font:inherit}
+textarea.form-control{height:auto;padding:6px 10px}
+.form-control:focus{outline:0;border-color:#1e87f0}
+.btn{display:inline-block;box-sizing:border-box;padding:0 30px;line-height:38px;font-size:.875rem;border:1px solid #e5e5e5;background:transparent;color:#333;cursor:pointer;text-decoration:none}
+.btn-primary{background:#1e87f0;border-color:transparent;color:#fff}
+.btn:hover{border-color:#b2b2b2;text-decoration:none}
+.btn-primary:hover{background:#0f7ae5;color:#fff}
+.alert{position:relative;margin-bottom:20px;padding:15px 29px 15px 15px;background:#f8f8f8;color:#666}
+.alert-success{background:#edfbf6;color:#32d296}.alert-danger,.alert-error{background:#fef4f6;color:#f0506e}.alert-warning{background:#fef5ee;color:#faa05a}.alert-info{background:#d8eafc;color:#1e87f0}
+.visually-hidden,.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;border:0!important}
