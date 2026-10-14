@@ -236,9 +236,9 @@ On a clean Joomla 6.2.0 with the "Vestnik" demo site from the wmarka package:
 
 ## History
 
-**J!Blank.** It started with J!Blank by the JBZoo team: a template that generates no styles and leaves every decision to the developer.
+**J!Blank.** It started with [J!Blank](https://github.com/JBZoo-CCK/JBlank) by the JBZoo team (Denis Smetannikov, Sergey Kalistratov, Evgeniy Kopylov): a template that generates no styles and leaves every decision to the developer.
 
-**wmarka 1.0 (July 2023) — 2.0.7 (December 2025).** An "almost clean template" on UIkit 3: no settings in the administrator, configuration in code (`php/init.php` from J!Blank), organisation data in language overrides in three languages, blocks as separate partials, positions and module styles after the Master3 template. Updates wiped the edits made in code, and positions were not declared in the manifest — both lessons are taken into account in clean.
+**wmarka 1.0 (July 2023) — 2.0.7 (December 2025).** An "almost clean template" on UIkit 3: no settings in the administrator, configuration in code (`php/init.php` from J!Blank), organisation data in language overrides in three languages, blocks as separate partials, positions and module styles after Aleksey Morozov's Master3 template. Updates wiped the edits made in code, and positions were not declared in the manifest — both lessons are taken into account in clean.
 
 **wmarka 3.0 (March 2026) and 4.x (October 2026).** The template grew into a "full" one: settings in the administrator, its own SEO engine, mega menus, news presentation, a demo package.
 
@@ -251,9 +251,9 @@ This template stands on many people's shoulders. Thank you:
 - **The Joomla Project** and Open Source Matters — for the core layouts every override starts from, and for Joomla itself.
 - **YOOtheme** — for UIkit, which carries all the markup.
 - **Denys Nosov and the Joomla! Ukraine team** — for the JUImage library.
-- **Denis Smetannikov (SmetDenis) and the JBZoo team** — for J!Blank, where wmarka began.
-- **The authors of the Master3 template** — for the position scheme and module styles that came into wmarka.
-- **Aleksey Morozov (AlekVolsk) and Sergey Tolkachyov** — for the Blank Page component (com_blank); Aleksey also for the UIkit grid module whose layouts lived in early versions.
+- **The developers of [J!Blank](https://github.com/JBZoo-CCK/JBlank), the JBZoo team:** Denis Smetannikov ([SmetDenis](https://github.com/SmetDenis)), Sergey Kalistratov ([Cheren](https://github.com/Cheren)) and Evgeniy Kopylov ([CB9TOIIIA](https://github.com/CB9TOIIIA)). wmarka began with their starter: clean markup, configuration in code, and the idea that a template should not decide for the developer.
+- **Aleksey Morozov** ([AlekVolsk](https://github.com/AlekVolsk), [alekvolsk.pw](https://alekvolsk.pw/ru/)) — for the Master3 template, the source of wmarka's position scheme and module styles, and for the UIkit grid module whose layouts lived in early versions.
+- **Aleksey Morozov and Sergey Tolkachyov** — for the Blank Page component (com_blank).
 - **Authors of layouts that lived in wmarka 1.x–2.x:** web-eau.net (category article layouts), FavThemes (timeline and promo banners), TemplatePlazza (news feed with dates), Jeroen Moolenschot and Joomill (YouTube field), Joomline (JL extension layouts), Septdir Workshop (JYProExtra layouts), Serban Ghita and Nick Ilyin (Mobile Detect), the Google AMP team (the AMP version in 1.0).
 - **The JPathRu community** and jpath.ru — for the Russian Joomla documentation we learned from and checked against.
 - **Everyone who ran wmarka on their sites and sent bug reports:** many 4.x decisions that made it into clean grew out of those reports.
