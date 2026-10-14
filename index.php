@@ -33,6 +33,9 @@ foreach ([['favicon.svg', 'icon', ['type' => 'image/svg+xml']], ['favicon.ico', 
 }
 
 $site    = htmlspecialchars((string) $app->get('sitename'), ENT_QUOTES, 'UTF-8');
+// Главная текущего языка: на многоязычном сайте /kk/, /ru/, а не корень
+$homeItem = $app->getMenu()->getDefault($app->getLanguage()->getTag()) ?: $app->getMenu()->getDefault();
+$homeUrl  = $homeItem ? \Joomla\CMS\Router\Route::_('index.php?Itemid=' . (int) $homeItem->id) : Uri::root(true) . '/';
 $active  = $app->getMenu()->getActive();
 $pclass  = $active ? htmlspecialchars((string) $active->getParams()->get('pageclass_sfx', ''), ENT_QUOTES, 'UTF-8') : '';
 $sideA   = $this->countModules('sidebar-a');
@@ -65,7 +68,7 @@ $n       = 0;
                     <?php if ($this->countModules('logo')) : ?>
                         <jdoc:include type="modules" name="logo" style="none" />
                     <?php else : ?>
-                        <a class="uk-navbar-item uk-logo" href="<?php echo Uri::root(true); ?>/"><?php echo $site; ?></a>
+                        <a class="uk-navbar-item uk-logo" href="<?php echo htmlspecialchars($homeUrl, ENT_QUOTES, 'UTF-8'); ?>"<?php echo ($active && $active->home) ? ' aria-current="page"' : ''; ?>><?php echo $site; ?></a>
                     <?php endif; ?>
                 </div>
                 <?php if ($this->countModules('navbar-center')) : ?>
