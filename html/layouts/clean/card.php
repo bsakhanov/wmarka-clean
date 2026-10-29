@@ -19,7 +19,7 @@ $wide    = !empty($displayData['wide']);
 $h       = $displayData['heading'] ?? 'h3';
 $title   = htmlspecialchars((string) ($item->title ?? $item->core_title ?? ''), ENT_QUOTES, 'UTF-8');
 $text    = trim(strip_tags((string) ($item->introtext ?? $item->core_body ?? '')));
-$text    = mb_strlen($text) > 220 ? rtrim(mb_substr($text, 0, mb_strrpos(mb_substr($text, 0, 220), ' ') ?: 220), ' ,.;:—-') . '…' : $text;
+$text    = mb_strlen($text) > 220 ? preg_replace('/[ ,.;:—-]+$/u', '', mb_substr($text, 0, mb_strrpos(mb_substr($text, 0, 220), ' ') ?: 220)) . '…' : $text;
 $image   = LayoutHelper::render('joomla.content.intro_image', $item);
 $cat     = (!empty($item->category_title) && $params->get('show_category', 1))
     ? (!empty($item->catslug) && $params->get('link_category') ? '<a class="uk-text-primary" href="' . Route::_(RouteHelper::getCategoryRoute($item->catslug, $item->category_language ?? '*')) . '">' . htmlspecialchars($item->category_title, ENT_QUOTES, 'UTF-8') . '</a>' : '<span class="uk-text-primary">' . htmlspecialchars($item->category_title, ENT_QUOTES, 'UTF-8') . '</span>')
