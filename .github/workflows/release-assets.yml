@@ -30,6 +30,12 @@ jobs:
           V=$(grep -oP '(?<=<version>)[^<]+' templateDetails.xml | head -1)
           mkdir -p dist
           zip -qr dist/tpl_wmarka_clean-$V.zip . -x '.git/*' '.github/*' 'updates/*' 'dist/*'
+          # Архив для распаковки в корень сайта поверх установленного шаблона
+          mkdir -p root/templates/wmarka_clean root/media/templates/site/wmarka_clean root/language
+          rsync -a --exclude='.git' --exclude='.github' --exclude='updates' --exclude='media' --exclude='language' --exclude='dist' --exclude='root' ./ root/templates/wmarka_clean/
+          cp -r media/. root/media/templates/site/wmarka_clean/
+          cp -r language/. root/language/
+          (cd root && zip -qr ../dist/tpl_wmarka_clean-${V}_files.zip .)
           (cd dist && sha256sum *.zip > SHA256SUMS && cat SHA256SUMS)
 
       - name: Attach to the release
