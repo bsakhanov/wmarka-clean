@@ -15,9 +15,9 @@ $p = $this->params;
 <div class="wm-contact">
     <div class="uk-grid-medium uk-flex-middle uk-margin-medium-bottom" uk-grid>
         <?php if ($c->image && $p->get('show_image', 1)) : ?>
-            <div class="uk-width-auto"><?php echo T::img((string) $c->image, [[200, 200]], (string) $c->name, '', 'uk-border-circle'); ?></div>
+            <div class="uk-width-1-1 uk-width-auto@s"><?php echo T::img((string) $c->image, [[200, 200]], (string) $c->name, '', 'uk-border-circle'); ?></div>
         <?php endif; ?>
-        <div class="uk-width-expand">
+        <div class="uk-width-1-1 uk-width-expand@s" style="min-width:0">
             <h1 class="uk-heading-small uk-margin-remove"><?php echo htmlspecialchars((string) $c->name, ENT_QUOTES, 'UTF-8'); ?></h1>
             <?php if ($c->con_position && $p->get('show_position', 1)) : ?><p class="uk-text-lead uk-margin-small-top"><?php echo htmlspecialchars((string) $c->con_position, ENT_QUOTES, 'UTF-8'); ?></p><?php endif; ?>
         </div>

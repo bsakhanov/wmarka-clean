@@ -42,7 +42,7 @@ It is a clean build of [wmarka](https://github.com/bsakhanov/wmarka): the same p
 
 ## Installation
 
-1. Download `tpl_wmarka_clean-1.0.2.zip` from the [releases](https://github.com/bsakhanov/wmarka-clean/releases) page.
+1. Download `tpl_wmarka_clean-1.0.4.zip` from the [releases](https://github.com/bsakhanov/wmarka-clean/releases) page.
 2. Joomla administrator → **System → Install Extensions → Upload Package File** → choose the archive.
 3. **System → Site Template Styles** → click the star of "wmarka_clean - Default" to make it the default style.
 4. Install JUImage if your site does not have it yet: the `lib_juimage` archive is in the [JUImage](https://github.com/Joomla-Ukraine/JUImage) releases and inside the full [wmarka](https://github.com/bsakhanov/wmarka/releases) package. The template finds the library by itself.

@@ -42,7 +42,7 @@ Joomla 5 және 6 нұсқаларына арналған, UIkit 3 негіз�
 
 ## Орнату
 
-1. [Шығарылымдар](https://github.com/bsakhanov/wmarka-clean/releases) бетінен `tpl_wmarka_clean-1.0.2.zip` мұрағатын жүктеп алыңыз.
+1. [Шығарылымдар](https://github.com/bsakhanov/wmarka-clean/releases) бетінен `tpl_wmarka_clean-1.0.4.zip` мұрағатын жүктеп алыңыз.
 2. Joomla әкімшілік панелі → **Жүйе → Кеңейтімдерді орнату → Пакет файлын жүктеу** → мұрағатты таңдаңыз.
 3. **Жүйе → Сайт шаблондарының стильдері** → «wmarka_clean - Әдепкі» стилінің жұлдызшасын басыңыз: ол әдепкі стиль болады.
 4. Сайтта JUImage әлі жоқ болса, оны орнатыңыз: `lib_juimage` мұрағаты [JUImage](https://github.com/Joomla-Ukraine/JUImage) шығарылымдарында және толық [wmarka](https://github.com/bsakhanov/wmarka/releases) пакетінің ішінде бар. Шаблон кітапхананы өзі табады.
